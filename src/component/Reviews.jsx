@@ -33,16 +33,16 @@ export default function Reviews() {
 
 
   return (
-    <div className='h-[120vh]'>
+    <div className=''>
       <div className='text-center text-gray-700 bg-white  '>
      <h1 className='uppercase pt-[100px] text-[30px] '>clients reviews</h1>
      <p className='pt-[30px] text-[18px]'>What our client say about us</p>
    </div>
 
-    <div className='flex mt-[80px]'>
+    <div className='md:flex  mt-[80px]'>
       {
         reviewItems.map((eachreview)=>(
-          <div className=' shadow-sm w-[449px] mx-[30px]  h-[320px] py-[30px] px-[30px] bg-white text- '>
+          <div className=' shadow-sm w-[100%] mx-[30px] pb-[20px] my-[40px] px-[30px] bg-white text- '>
              <div className='flex gap-[20px] '>
             <img className='h-[50px] w-[50px] mt-[60px]' src={eachreview.image} alt={eachreview.text1} />
             <div className='h-hidden  mt-[35px] leading-[1.7] '>

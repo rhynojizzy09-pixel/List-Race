@@ -27,10 +27,10 @@ export default function Container() {
 
 
   return (
-    <div className='flex  justify-center h-[80vh] gap-9 bg-white' >
+    <div className='md:flex  justify-center md:h-[80vh] h-[110vh] gap-9 bg-white' >
        {
         contItems.map((eachcont)=>(
-            <div className=' shadow-sm h-[400px] w-[28%] bg-white text-center  rounded-[6px] p-[50px] group hover:bg-[#ff0000] '>
+            <div className=' shadow-sm h-[400px] md:w-[28%] w-[100%] bg-white text-center  rounded-[6px] p-[50px] group hover:bg-[#ff0000] '>
                 <i className={`${eachcont.icons} text-4xl bg-[#eef2f6] p-[20px] rounded-full  group-hover:text-red-500 group-hover:bg-white  ` }></i>
                 <h1 className='mt-[30px] text-[20px] group-hover:text-white'>{eachcont.text1}</h1>
                 <p className='mt-[20px]  group-hover:text-white'>{eachcont.text2}</p>

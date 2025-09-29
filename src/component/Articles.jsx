@@ -56,18 +56,18 @@ export default function Articles () {
 
 
   return (
-    <div className='h-[100vh] '>
+    <div className=' '>
       <div className=' text-center mt-[120px] '>
         <h1 className='text-[24px] '>NEWS AND ARTICLES</h1>
         <p className='mt-[15px] text-[16px] '>Always upto date with our latest News and Articles</p>
       </div>
 
-     <div className='flex mt-[100px] mx-[70px] gap-[30px] h-[100vh]'>
+     <div className='md:flex mt-[100px] mx-[70px] gap-[30px] '>
      {
         articlesItem.map((eachItem)=>(
-          <div className='shadow-sm h-[500px] w-[30%]  '>
-            <img src={eachItem.image1} alt="" />
-            <div className='py-[30px] px-[30px]'> 
+          <div className='shadow-sm  w-[100%] mb-[30px] '>
+            <img src={eachItem.image1} alt="" className='w-[100%]' />
+            <div className='py-[50px] px-[30px] '> 
                <h2 className='cursor-pointer hover:text-orange-400 text-[17px] '>{eachItem.text1}</h2>
                <div className='flex pt-[10px] gap-[12px] '>
                 <p >{eachItem.text2}</p>

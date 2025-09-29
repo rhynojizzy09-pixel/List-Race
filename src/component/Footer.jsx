@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='h-[30vh]'>
-       <div className=' flex justify-between text-center  mt-[50px] px-[130px] h-[13vh]  bg-white  '>
+    <div className=''>
+       <div className=' md:flex justify-between text-center  mt-[50px] px-[130px]   bg-white  '>
            <div className=''>
              <h1 className='text-[#1b1e20] text-[20px] font-bold'>List<span className='text-[orangered]'>Race</span></h1>
           </div>
@@ -19,7 +19,7 @@ export default function Footer() {
         </div> 
       
       </div>     
-         <div className='flex justify-between mt-[30px] px-[130px]'>
+         <div className='md:flex justify-between mt-[30px] px-[130px]'>
             <p className='text-[12px]'>©Copyright. Designed and Developed By Themesine</p>
             <div className=' '>
               <i className='pi pi-phone hover:text-[#ff0000] '><span classname='text-[8px]'>+1 (222) 777 8888</span></i>  

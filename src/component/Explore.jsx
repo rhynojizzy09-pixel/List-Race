@@ -123,17 +123,17 @@ function getRating(num1) {
 }
 
   return (
-    <div className='h-[270vh] bg-[#f8fafb] text-center'>
+    <div className=' bg-[#f8fafb] text-center'>
         <div className='pt-[100px] text-neutral-600 '>
             <h1 className='text-[30px] '>EXPLORE</h1>
             <p className='pt-[15px]'>Explore New place, food, culture around the world and many more</p>
         </div>
 
-        <div className=' flex flex-wrap gap-[30px] m-[80px] h-[100vh]  '>
+        <div className=' md:flex  flex-wrap gap-[30px]  m-[80px]   '>
      {
         exploreItem.map((eachexplore)=>(
-            <div className='shadow-sm w-[30%]  h-[100%] bg-white' > 
-                <img src={eachexplore.image1} alt="" />
+            <div className='shadow-sm md:w-[30%] my-[30px] w-[100%]  bg-white' > 
+                <img src={eachexplore.image1} alt=""  className='w-[100%]'/>
                 <h2 className='my-[25px] justify-self-start px-[20px] font-bold cursor-pointer'>{eachexplore.text1}</h2>
                 <div className=' flex  '>
                 <span className={`${getRating(eachexplore.num1)} shadow-sm w-[10%] mx-[9px]  text-white rounded-[2px]`}>{eachexplore.num1}</span>
@@ -141,13 +141,13 @@ function getRating(num1) {
                 <p className=' border-r-1 px-[10px] border-indigo-500 '>{eachexplore.text3}</p>
                 <p className='px-[10px] cursor-pointer'>{eachexplore.word}</p>
                 </div>
-                <div className='flex mt-[30px] mx-[20px]'>
+                <div className='flex mt-[30px] mx-[20px] '>
                 <img className='w-[50px] h-[50px] cursor-pointer' src={eachexplore.image2} alt="" />
                 <p className='text-[14px] leading-[1.8] '>{eachexplore.word2}</p>
                 </div>
                 <div className=' mt-[50px] border-b-1 mx-[20px] border-indigo-500'>
                 </div>
-                <div className='mt-[40px] mx-[20px]  flex justify-between cursor-pointer  '>
+                <div className='mt-[40px] mx-[20px] pb-[30px] flex justify-between  cursor-pointer  '>
                   <h2 className={`${getWord(eachexplore.word3)} text-[14px]`} >{eachexplore.word3}</h2>
                   <div className=' flex gap-[30px]'>
                   <i  className={`${eachexplore.icons1} `}></i>

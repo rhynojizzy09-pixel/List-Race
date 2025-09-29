@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Account() {
   return (
-    <div className='h-[70vh] mt-[150px]  text-center bg-[#f8fafb]'>
+    <div className='mt-[150px]  text-center bg-[#f8fafb]'>
         <div className='p-[100px] '>
           <h1 className='uppercase'>do you want to add your business listing with us?</h1>
           <p className='pt-[20px]'>Listrace offer you to list your business with us and we very much able to promote your Business.</p>
